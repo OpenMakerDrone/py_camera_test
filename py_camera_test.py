@@ -15,6 +15,7 @@ time.sleep(0.1)
 camera.capture(rawCapture, format="bgr")
 img = rawCapture.array
 
+cv2.imwrite("test_output.png", img)
 cv2.imshow("picamera test", img)
 cv2.waitKey(0)
 
